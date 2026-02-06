@@ -9,17 +9,11 @@ To write a program to predict the profit of a city using the linear regression m
 
 ## Algorithm
 
-Step 1: Initialize Parameters - Set initial values for slope m = 0, y-intercept b = 0, and learning rate α (e.g., 0.01).
-
-Step 2: Load the Dataset - Extract independent variable X (study hours) and dependent variable Y (marks scored).
-
-Step 3: Define the Cost Function - Calculate J(m,b) = (1/2n) Σ(ŷi - yi)² where ŷi = mxi + b.
-
-Step 4: Compute Gradients - Calculate ∂J/∂m = (1/n) Σ(ŷi - yi)xi and ∂J/∂b = (1/n) Σ(ŷi - yi).
-
-Step 5: Update Parameters Using Gradient Descent - Update m = m - α(∂J/∂m) and b = b - α(∂J/∂b), repeat for fixed iterations or until convergence.
-
-Step 6: Form the Linear Equation and Visualize - Obtain final equation Y = mX + b and plot scatter plot with regression line.
+1. Load the dataset from a CSV file and separate the features and target variable, encoding any categorical variables as needed.<br>
+2. Scale the features using a standard scaler to normalize the data.<br>
+3. Initialize model parameters (theta) and add an intercept term to the feature set.<br>
+4. Train the linear regression model using gradient descent by iterating through a specified number of iterations to minimize the cost function.<br>
+5. Make predictions on new data by transforming it using the same scaling and encoding applied to the training data.
 
 ## Program:
 ```
